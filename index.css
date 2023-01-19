@@ -602,7 +602,97 @@ footer hr{
     color: white;
 }
 
-@media screen and (max-width: 400px) {
+
+@media screen and (max-width: 800px){
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: rgb(22, 22, 22);
+        gap: 100px;
+    }
+
+    .home{
+        background-color: rgb(22, 22, 22);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    .home #user-dev{
+        height: 0px;
+        padding-bottom: 0px;
+    }
+
+    .explic{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 530px;
+        gap: 50px;
+    }
+
+    .inst{
+        gap: 30px;
+        text-align: center;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        margin-top: 70px;
+    }
+    
+    .amostra img:hover{
+        margin-top: 0px;
+        transition: none;
+        -webkit-transform: none;
+        transform: none;
+        filter: none;
+    }
+
+    .amostra img{
+        height: 150px;
+        -webkit-transition: none;
+       transition: none;
+       filter: grayscale(0%);
+    }
+
+
+    .sobre-getup{
+        display: flex;
+        flex-direction: row;
+        background-color: #6745ff;
+        justify-content: center;
+        gap: 30px;
+        padding-bottom: 100px;
+    }
+    
+    .sobre-getup img{
+        height: 240px;
+        padding-top: 90px
+    }
+    
+    .sobre-getup p{
+        color: rgb(255, 255, 255);
+        font-family: 'Inter', sans-serif;
+        font-size: 13px;
+    }
+    
+    .sobre-getup h2{
+        color: rgb(255, 255, 255);
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+  }
+
+@media screen and (min-width: 0px) {
     header{
         display: flex;
         flex-direction: column;
@@ -621,7 +711,7 @@ footer hr{
     header nav{
         display: flex;
         gap: 15px;
-        margin-top: -360px;
+        margin-top: -60px;
         margin-left: -90px;
     }
 
@@ -643,9 +733,9 @@ footer hr{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-left: 5%;
-        gap: 0px;
+        align-items: center;
         padding-top: 0px;
+        gap: 0px;
     }
 
     .text button{
@@ -719,7 +809,7 @@ footer hr{
         flex-direction: column;
         background-color: rgb(255, 255, 255);
         align-items: center;
-        margin-top: 30px;
+        margin-top: 0px;
         padding-bottom: 70px;
     }
 
@@ -740,6 +830,9 @@ footer hr{
     .sobre-getup{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
         background-color: #6745ff;
         justify-content: center;
         gap: 80px;
@@ -768,6 +861,7 @@ footer hr{
     .nossos-trabalhos{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         background-color: rgb(22, 22, 22);
         padding-top: 60px;
@@ -776,10 +870,11 @@ footer hr{
 
     .amostra{
         display: flex;
+        justify-content: center;
+        align-items: center;
         gap: 14px;
         flex-wrap: wrap;
         margin-top: -93px;
-        margin-left: 4%;
     }
 
     .amostra img:hover{
@@ -808,12 +903,14 @@ footer hr{
     .cotação{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         margin-top: -60px;
         background-color: rgb(22, 22, 22);
         padding-bottom: 45px;
         justify-content: center;
         gap: 0px;
+        padding-right: 20px;
         margin-left: 30px;
     }
 
@@ -877,5 +974,14 @@ footer hr{
         font-family: 'Inter', sans-serif;
         color: rgb(138, 138, 138);
         font-size: 9px;
+    }
+
+    .serviços hr{
+        width: 0px;
+        color: rgb(33, 33, 33);
+        border-radius: 5px;
+        border: solid 0px;
+        background-color: rgb(33, 33, 33); 
+        margin-bottom: 15px;
     }
   }
