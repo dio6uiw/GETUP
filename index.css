@@ -169,7 +169,6 @@ svg {
     height: 60px;
     position: absolute;
     margin-top: -27px;
-    margin-left: 50%;
 }
 
 .explic{
@@ -642,7 +641,7 @@ footer hr{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .home #user-dev{
@@ -658,7 +657,7 @@ footer hr{
         padding-bottom: 70px;
         gap: 0px;
         padding-top: 30px;
-        padding-left: 20px;
+        padding-left: 0px;
     }
 
     .text h2{
@@ -666,15 +665,27 @@ footer hr{
         margin-top: 10px;
     }
 
+    .text p{
+        font-size: 15px;
+        margin-top: 15px;
+    }
+
     .text button{
         background-image: linear-gradient(110deg, #623cf8 0, #507ae8 12.5%, #6976e3 25%, #7e71de 37.5%, #8f6cd8 50%, #9e67d1 62.5%, #ab61c9 75%, #b75cc0 87.5%, #c157b7 100%);
         color: white;
         margin-top: 30px;
-        height: 40px;
+        height: 45px;
         width: 300px;
         border: 0px;
         font: bold 14px arial,sans-serif;
         text-shadow: none;
+    }
+
+    #text-mk{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
     }
 
     .diferenciais{
@@ -699,7 +710,7 @@ footer hr{
     #seta-center{
         height: 50px;
         margin-top: -20px;
-        padding-left: 0;
+        margin-left: -20px;
     }
 
     .inst{
@@ -792,7 +803,7 @@ footer hr{
         padding: 20px;
         border-radius: 10px;
         margin-top: 40px;
-        margin-bottom: -70px;
+        margin-bottom: -50px;
     }
 
     .nossos-trabalhos{
@@ -800,7 +811,7 @@ footer hr{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-top: 50px;
+        padding-top: 70px;
         padding-bottom: 50px;
     }
 
