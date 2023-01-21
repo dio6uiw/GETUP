@@ -702,6 +702,7 @@ footer hr{
     }
 
     .diferenciais p{
+        font-size: 13px;
         margin-right: 15px;
         font-family: 'Open Sans', sans-serif;
         color: rgb(198, 198, 198);
