@@ -633,7 +633,7 @@ footer hr{
     }
 
     header nav a{
-        font-size: 14px;
+        font-size: 13px;
         position: relative;
     }
 
@@ -671,7 +671,7 @@ footer hr{
         color: white;
         margin-top: 30px;
         height: 40px;
-        width: 270px;
+        width: 300px;
         border: 0px;
         font: bold 14px arial,sans-serif;
         text-shadow: none;
@@ -691,7 +691,7 @@ footer hr{
     }
 
     .diferenciais p{
-        margin-right: 20px;
+        margin-right: 15px;
         font-family: 'Open Sans', sans-serif;
         color: rgb(198, 198, 198);
     }
@@ -738,8 +738,14 @@ footer hr{
         font-family: 'Open Sans', sans-serif;
     } 
 
+    .serviços .text h2{
+        margin-top: 0px;
+        margin-left: 7px;
+        color: rgb(33, 33, 33);
+    }
+
     .box hr{
-        width: 220px;
+        width: 0px;
         border-radius: 0px;
         border: 0;
         height: 5px;
