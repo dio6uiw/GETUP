@@ -20,7 +20,7 @@ header{
 }
 
 header img{
-    height: 50px;
+    height: 55px;
     margin-left: -100px;
 }
 
@@ -462,6 +462,22 @@ svg {
 
 .amostra img:hover{
     margin-top: 0px;
+    transition: 200ms;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    filter: grayscale(0);
+}
+
+.amostra-web img{
+    height: 300px;
+    -webkit-transition: -webkit-transform .5s ease;
+   transition: transform .5s ease;
+   filter: grayscale(100%);
+   margin-top: -70px;
+}
+
+.amostra-web img:hover{
+    margin-top: -70px;
     transition: 200ms;
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
