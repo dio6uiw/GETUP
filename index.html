@@ -1,171 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Getup | Marketing Digital</title>
-    <link rel="icon" href="Logo.png"/>
+    <title>GETUP | Software sob medida</title>
+    <link rel="icon" href="Logo.png" />
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="resp.html">
 </head>
+
 <body>
     <header>
-        <img src="2.png" alt="">
-        <nav>
-            <a href="#direcionar">Serviços</a>
-            <a href="#sobre">Sobre nós</a>
-            <a href="#portifolio">Portifólio</a>
-            <a href="#contato">Contato</a>
+        <img src="logo-header.png" alt="">
+
+        <div id="engloba-nav">
+            <nav id="desktop-nav">
+                <a href="#direcionar">Especialidades</a>
+                <a href="#sobre">Sobre nós</a>
+                <a href="#portifolio">Ferramentas</a>
+                <a href="#contato">Contato</a>
+            </nav>
+
             <div class="container">
                 <div class="center">
-                  <button class="btn">
-                    <svg width="90px" height="27px" viewBox="0 0 90 27" class="border">
-                      <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-                      <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-                    </svg>
-                    <span><a href="https://wa.me/5519992727609?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20um%20or%C3%A7amento!">Contratar</a></span>
-                  </button>
+                    <button class="btn">
+                        <svg width="90px" height="27px" viewBox="0 0 90 27" class="border">
+                            <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                            <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                        </svg>
+                        <span><a
+                                href="https://wa.me/5519992727609?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20um%20or%C3%A7amento!">Vamos
+                                lá?</a></span>
+                    </button>
                 </div>
             </div>
-        </nav>
+        </div>
+
+        <div id="menu-linha">
+            <span><a href="#" id="abrir-menu"><img src="menu.png" alt=""></a></span>
+        </div>
     </header>
+
+    <div id="menu-modal" class="modal">
+        <div class="modal-content">
+            <center>
+                <a href="#direcionar">Especialidades</a>
+                <a href="#sobre">Sobre nós</a>
+                <a href="#portifolio">Ferramentas</a>
+                <a href="#contato">Contato</a>
+                <button id="close-modal" class="btn-close"></button>
+            </center>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("menu-linha").addEventListener("click", function () {
+            var modal = document.getElementById("menu-modal");
+            modal.style.display = "block";
+        });
+
+        document.getElementById("close-modal").addEventListener("click", function () {
+            var modal = document.getElementById("menu-modal");
+            modal.style.display = "none";
+        });
+
+        window.addEventListener("click", function (event) {
+            var modal = document.getElementById("menu-modal");
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+    </script>
 
     <main>
         <div class="home">
             <div class="text">
-                <h2>Geramos soluções que <br> orquestram resultados <br> para o seu negócio</h2>
-                <p>Usamos nosso planejamento estratégico <br> para ajudar o seu negócio a crescer na web.</p>
-                <a href="https://wa.me/5519992727609?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20um%20or%C3%A7amento!"><button>SOLICITAR UM ORÇAMENTO</button></a>
+                <h2>Geramos soluções sob <br> medida para potencializar<br> o seu sucesso!</h2>
+                <p>Construindo pontes entre a <b>tecnologia</b> e o <b>progresso.</b></p>
+                <a href="https://wa.me/5519992727609?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20um%20or%C3%A7amento!"><button>SOLICITAR
+                        UM ORÇAMENTO</button></a>
                 <div class="diferenciais">
                     <img src="seta-black.png" alt="">
                     <p>Mais <br> <b>Resultados</b></p>
 
                     <img src="engrenagem.png" alt="">
-                    <p>Mais <br> <b>Estratégia</b></p>
+                    <p>Mais <br> <b>Soluções</b></p>
 
                     <img src="pencil.png" alt="">
-                    <p>Mais <br> <b>Design</b></p>
-                </div>  
+                    <p>Mais <br> <b>Inovação</b></p>
+                </div>
             </div>
             <img id="user-dev" src="capa.png" alt="">
         </div>
-        <a href="#explic"> <center> <img id="seta-center" src="seta.png" alt=""></center></a>
+        <a href="#explic">
+            <center> <img id="seta-center" src="seta.png" alt=""></center>
+        </a>
 
         <div class="explic" id="explic">
             <div class="text" id="text-mk">
                 <img src="https://pt.seaicons.com/wp-content/uploads/2015/10/Arrow-OutRight-icon.png" alt="">
-                <h2>Por que seu <br>negócio precisa do</h2>
-                <h2 id="text-roxo">Marketing digital?</h2>
+                <h2>Por que seu <br>negócio precisa das</h2>
+                <h2 id="text-roxo">Nossas soluções?</h2>
             </div>
             <div class="container-info">
-            <p>
-                O Marketing Digital possibilita que você atraia<br>as pessoas que realmente estão interessadas<br> e possuem fit com seu produto/solução.<br> Além disso, o marketing não serve apenas para<br> conseguir novos clientes, ele ajuda a fidelizar<br> aqueles que já conhecem a marca.
-                    <br>
-                    <br>    
-                Oferecemos uma equipe especializada, para<br> todas as empresas que não possuem uma<br> equipe de marketing digital e querem prom-<br>over a própria marca, produtos e serviços.
-            </p>
-                <a href="#portifolio"><button>VEJA MAIS</button></a>
+                <p>
+                    Não importa o tamanho da <b>sua empresa</b> ou a indústria em que você atua, nossas
+                    <b>soluções</b> de software, sites e automações oferecem uma abordagem <b>eficiente</b> e
+                    intuitiva para melhorar suas operações, aumentar a <b>produtividade</b> e impulsionar o
+                    <b>crescimento</b> do seu negócio. Deixe-nos ajudá-lo a alcançar o sucesso através da
+                    <b>tecnologia</b> de ponta e soluções feitas <b>sob medida</b> para suas <b>necessidades</b>.
+                </p>
             </div>
-        </div>          
-            <div class="serviços">
-                <div id="direcionar"></div>
+        </div>
+
+        <div class="serviços">
+            <div id="direcionar"></div>
+
             <hr>
+
             <div class="text">
                 <h2 id="text-roxo">Como podemos</h2>
                 <h2>te ajudar?</h2>
             </div>
-                <div class="inst">
-                    <div class="box">
-                        <img src="ideia.png" alt="">
-                        <p style="font-size: 15px;"><b>Criação & Design</b></p>
-                        <br>
-                        <p>Marca, logotipo, identidade visual, catálogo, portfólio, banners, etc.</p>
-                        <hr style="background-color: #7252fb; margin-top: 70px;">
-                    </div>
 
-                    <a href="" div class="box">
-                        <img src="devweb.png" alt="">
-                        <p style="font-size: 15px;"><b>Projetos na Web</b></p>
-                        <br>
-                        <p>Desenvolvimento de website profissionais e responsivos, e-commerce, landing page, hotsite, blog, etc.</p>
-                        <hr style="background-color: #00ce26; margin-top: 55px;">
-                    </div></a>
+            <center>
+                <p class="introducao">Estamos comprometidos em oferecer soluções personalizadas e eficientes para
+                    atender às necessidades e alcançar os objetivos do seu negócio.</p>
+            </center>
 
-                    <div class="box">
-                        <img src="redessociais.png" alt="">
-                        <p style="font-size: 15px;"><b>Mídias e Redes Sociais</b></p>
-                        <br>
-                        <p>Planejamento e execução, geração de conteúdo, publicidade, análise, engajamento, etc.</p>
-                        <hr style="background-color: #cc00ff; margin-top: 55px;">
+            <div class="servicos-oferecidos">
+                <center>
+                    <div class="dev-softwere">
+                        <img src="monitorando.png" alt="">
+                        <h2>Sistemas <br> Personalizado</h2>
                     </div>
-                </div>
-                <a href="https://wa.me/5519992727609?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20um%20or%C3%A7amento!"><button>SOLICITAR UM ORÇAMENTO</button></a>
+                </center>
+
+                <center>
+                    <div class="dev-softwere">
+                        <img src="automacao.png" alt="">
+                        <h2>Automação <br> de Procesos</h2>
+                    </div>
+                </center>
+
+                <center>
+                    <div class="dev-softwere">
+                        <img src="programacao.png" alt="">
+                        <h2>Desenvolvimento <br> Web</h2>
+                    </div>
+                </center>
+
+                <center>
+                    <div class="dev-softwere">
+                        <img src="computador.png" alt="">
+                        <h2>Consultoria <br> em TI</h2>
+                    </div>
+                </center>
             </div>
 
-            <div class="sobre-getup" id="sobre">
-                <img src="mac.png" alt="">
-                <div class="container-sobre">
-                    <h2>SOBRE A GETUP</h2>
-                    <p>Uma agência especializada em estratégias<br> de marketing digital para pequenas e médias<br> empresas. Acreditamos que para alcançar os<br> resultados desejados, precisamos ter um bom<br> relacionamento com clientes e parceiros.</p>
-                    <br>
-                    <p>Nosso time de colaboradores é formado
-                    por<br>profissionais com certificações
-                    em marketing<br> e administração de conteúdo
-                    com experiência<br> em branding, design gráfico, criação de sites,<br>
-                    landing page e tráfego digital.<br>
-                    Estamos preparados para fazer seu projeto ir<br> para o próximo nível.
+        </div>
+
+
+        <div class="sobre-getup" id="sobre">
+            <img src="mac.png" alt="">
+            <div class="container-sobre">
+                <h2>&lt; SOBRE A GETUP /></h2>
+                <p>Somos uma empresa de soluções tecnológicas dedicada a oferecer o melhor em softwares e
+                    automações
+                    para negócios de todos os tamanhos. Nosso diferencial é oferecer soluções simples,
+                    eficientes e acessíveis para todos os usuários, independentemente do nível de
+                    conhecimento
+                    técnico ou dos dispositivos utilizados. <br><br>Desenvolvemos softwares que utilizam recursos da
+                    web, dispensando a necessidade de hardware avançado. Com a adoção da computação em
+                    nuvem,
+                    proporcionamos uma experiência conveniente, ágil, segura e eficiente aos nossos clientes,
+                    permitindo que se concentrem em seus negócios sem preocupações técnicas. Acreditamos que a
+                    tecnologia deve ser acessível e impulsionar o sucesso das empresas, seja um pequeno
+                    negócio
+                    ou uma empresa em crescimento.
+                </p>
+            </div>
+        </div>
+
+        <div class="nossos-trabalhos">
+
+
+            <hr>
+            <div class="area-de-texto" id="portifolio">
+                <h2>POR QUÊ ESCOLHER A </h2>
+                <h2 style="margin-left: 8px"> GETUP?</h2>
+            </div>
+            <center>
+                <br>
+                <div class="Ferramentas">
+                    <p>Desafios empresariais exigem soluções modernas e eficazes. Na GETUP, estamos aqui para ajudar
+                        você a aprimorar seus processos e maximizar resultados.
+                        <br><br>
+                        Modernize e simplifique a gestão do seu negócio com nossas soluções personalizadas. Oferecemos a
+                        otimização de contas a pagar, contas a receber, controle de estoque, fluxo de caixa, emissão de
+                        notas, recibos, planejamento de produtos/serviços, ordens de serviço e propostas comerciais.
+                        <br><br>
+                        Transforme sua abordagem empresarial. Solicite um orçamento hoje e descubra como podemos
+                        impulsionar a eficiência dos seus processos. Juntos, vamos elevar o patamar do seu negócio.
                     </p>
+
+                </div>
+            </center>
+
+            <div class="engloba-passos">
+                <div class="passos">
+                    <p id="etapas">1ª Etapa</p>
+                    <hr class="barra">
+                    <div class="passos-desc">
+                        <h2>ENTENDIMENTO</h2>
+                        <p>Equipe capacitada para o entender a sua necessidade.</p>
+                    </div>
+                </div>
+
+                <div class="passos">
+                    <p id="etapas">2ª Etapa</p>
+                    <hr class="barra">
+                    <div class="passos-desc">
+                        <h2>SOLUÇÃO DO PROBLEMA</h2>
+                        <p>Nossa equipe se dedica a encontrar a solução ideal para cada problema.</p>
+                    </div>
+                </div>
+
+                <div class="passos">
+                    <p id="etapas">3ª Etapa</p>
+                    <hr class="barra">
+                    <div class="passos-desc">
+                        <h2>DESENVOLVIMENTO</h2>
+                        <p>Nossa equipe se dedica a encontrar a solução ideal para cada problema.</p>
+                    </div>
+                </div>
+
+                <div class="passos">
+                    <p id="etapas">4ª Etapa</p>
+                    <hr class="barra">
+                    <div class="passos-desc">
+                        <h2>ENTREGA E SUPORTE</h2>
+                        <p>Garantimos excelência na entrega e no suporte da solução.</p>
+                    </div>
                 </div>
             </div>
-
-            <div class="nossos-trabalhos">
-                <div class="area-de-texto" id="portifolio">
-                    <hr>
-                    <h2>Nossos trabalhos</h2>
-                    <p>Alguns serviços desenvolvidos para nossos parceiros.</p>
-                </div>
-                <div class="empresa">
-                    <h2>Criação & Design</h2>
-                </div>
-
-                <div class="amostra">
-                    <img src="Freestyle (1).png" alt="">
-                    <img src="energia.png" alt="">
-                    <img src="marmoraria.png" alt="">
-                    <img src="barbearia.png" alt="">
-                </div>
-                
-                <div class="empresa">
-                    <h2>Projetos na Web</h2>
-                </div>
-
-                <div class="amostra-web">
-                    <img src="site1.png" alt="">
-                    <img src="site1.png" alt="">
-                    <img src="site1.png" alt="">
-                </div>
-                <div class="area-de-texto" id="portifolio">
-                    <hr id="port-hr-baixo">
-                </div>
-            </div>
-
-            
+        </div>
     </main>
     <footer>
         <div class="cotação" id="contato">
             <div class="text">
                 <h2>Pronto para fazer sua empresa decolar?<br>
-                Peça uma cotação</h2>
+                    Peça uma cotação</h2>
                 <p>Você pode entrar em contato conosco pelos canais abaixo, é você quem escolhe.</p>
             </div>
             <!--<button>SOLICITAR UM ORÇAMENTO</button>-->
         </div>
         <hr>
         <div class="infos">
-            <img src="2.png" alt="">
+            <img src="4.png" alt="">
             <div class="contatos">
-                <p><b>Nosso email é:</b></p>
+                <p><b>Nosso e-mail é:</b></p>
                 <p>getupdevweb@gmail.com</p>
                 <br>
                 <p><b>Nosso telefone é:</b></p>
@@ -174,13 +270,16 @@
 
             <div class="redes-sociais">
                 <p><b>Redes sociais</b></p>
-                <a href="https://www.instagram.com/getup_br/"><img src="640px-Instagram_icon.png" alt="instagram"></a>
-                <a href="https://wa.me/5519992727609?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20um%20or%C3%A7amento!"><img src="whatsapp-logo-1.png" alt="whatsapp"></a>
+                <a href="https://www.instagram.com/getupdev/"><img src="640px-Instagram_icon.png" alt="instagram"></a>
+                <a href="https://wa.me/5519992727609?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20um%20or%C3%A7amento!"><img
+                        src="whatsapp-logo-1.png" alt="whatsapp"></a>
             </div>
         </div>
     </footer>
     <div class="feitopor">
-        <p>GETUP 2022 © Copyright | Criado e desenvolvido por</p> <p id="texto-branco">GETUP Marketing Digital.</p>
+        <p>GETUP 2022 © Copyright | Criado e desenvolvido por</p>
+        <p id="texto-branco">GETUP</p>
     </div>
 </body>
+
 </html>
